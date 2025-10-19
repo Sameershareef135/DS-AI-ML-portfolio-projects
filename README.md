@@ -1,5 +1,4 @@
-# DS-AI-ML-portfolio-projects
-This repository consists of my projects for data science, AI ML engineer
+
 # Data Science & AI/ML Portfolio
 
 This repository showcases my data science and machine learning projects.
