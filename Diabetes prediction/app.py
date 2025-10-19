@@ -1,12 +1,24 @@
 import streamlit as st  
 import pickle
 import numpy as np
-
+import matplotlib.pyplot as plt
+import seaborn as sns
 # Load model
 # model = pickle.load(open('diabetes_model.pkl', 'rb'))
 model = pickle.load(open('Diabetes prediction/diabetes_model.pkl', 'rb'))
 
 st.title('🩺 Diabetes Prediction App')
+
+# Feature Importance section
+st.subheader('📊 Feature Importance')
+feature_names = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 
+                 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
+importances = model.feature_importances_
+fig, ax = plt.subplots()
+ax.barh(feature_names, importances)
+st.pyplot(fig)
+
+st.subheader('🔮 Make a Prediction')
 
 # Input fields (all 8 features)
 pregnancies = st.number_input('Pregnancies', min_value=0, max_value=20, value=0)
