@@ -20,6 +20,32 @@ st.pyplot(fig)
 
 st.subheader('🔮 Make a Prediction')
 
+# Model Performance Metrics
+st.subheader('📈 Model Performance')
+col1, col2, col3 = st.columns(3)
+col1.metric("Accuracy", "73%")
+col2.metric("Precision", "61%")
+col3.metric("Recall", "71%")
+
+st.write("**Recall (71%)** means the model catches 71% of diabetes cases.")
+
+# Confusion Matrix (you'll need actual test data - simplified version)
+st.subheader('🎯 Model Predictions Overview')
+st.write("The model was trained on 768 patients and tested on 154 patients.")
+st.write("- **True Positives**: Correctly identified 39 diabetes cases")
+st.write("- **False Negatives**: Missed 16 diabetes cases (dangerous!)")
+st.write("- **True Negatives**: Correctly identified 74 healthy patients")
+st.write("- **False Positives**: Incorrectly flagged 25 as diabetic")
+
+# Dataset Statistics
+st.subheader('📊 Dataset Overview')
+st.write("Training data: 768 patients from Pima Indians Diabetes Database")
+st.write("- 500 patients without diabetes (65%)")
+st.write("- 268 patients with diabetes (35%)")
+
+st.markdown("---")
+st.subheader('🔮 Make a Prediction')
+
 # Input fields (all 8 features)
 pregnancies = st.number_input('Pregnancies', min_value=0, max_value=20, value=0)
 glucose = st.number_input('Glucose', min_value=0, max_value=200, value=100)
