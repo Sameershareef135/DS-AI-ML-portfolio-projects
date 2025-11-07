@@ -6,11 +6,12 @@ import pickle
 # Get the directory where the app.py file is located
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Load model, scaler, and feature names
-model = pickle.load(open('attrition_model.pkl', 'rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))
-feature_names = pickle.load(open('feature_names.pkl', 'rb'))
-defaults = pickle.load(open('defaults.pkl', 'rb'))
+# Load model, scaler, and feature names safely using absolute paths
+model = pickle.load(open(os.path.join(BASE_DIR, 'attrition_model.pkl'), 'rb'))
+scaler = pickle.load(open(os.path.join(BASE_DIR, 'scaler.pkl'), 'rb'))
+feature_names = pickle.load(open(os.path.join(BASE_DIR, 'feature_names.pkl'), 'rb'))
+defaults = pickle.load(open(os.path.join(BASE_DIR, 'defaults.pkl'), 'rb'))
+
 
 st.title('HR Attrition Predictor')
 st.write('Predict if an employee will leave')
