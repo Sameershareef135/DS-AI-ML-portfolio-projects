@@ -1,6 +1,10 @@
+import os
 import streamlit as st
 import pandas as pd
 import pickle
+
+# Get the directory where the app.py file is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load model, scaler, and feature names
 model = pickle.load(open('attrition_model.pkl', 'rb'))
