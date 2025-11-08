@@ -50,6 +50,33 @@ Trained using Logistic Regression and deployed as an interactive Streamlit web a
 Python, Streamlit, Scikit-learn, Pandas, Matplotlib, Seaborn
 
 ---
+### 📈 Stock Market Clustering (S&P 500)
+
+**Description:**
+An unsupervised machine learning project that clusters S&P 500 stocks based on historical market behavior.
+Using 5 years of price data from Kaggle, weekly log returns were extracted and standardized before dimensionality reduction using Principal Component Analysis (PCA).
+A Bayesian Gaussian Mixture Model (BGMM) was trained to identify probabilistic stock clusters, offering interpretable insights into sector-level relationships.
+
+**Visualizations:**
+
+PCA scatter plot of clustered stocks
+
+Posterior probability heatmap (soft cluster memberships)
+
+Confusion matrix comparing clusters with actual industry sectors
+
+**Model Metrics:**
+
+Effective Clusters: 6
+
+PCA Variance Explained (PC1–3): 26.9%
+
+Adjusted Rand Index (Sector Alignment): 0.04
+
+Silhouette Score: 0.18
+
+**Technologies:**
+Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn
 
 ## ⚙️ How to Run Locally
 
