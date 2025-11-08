@@ -1,0 +1,47 @@
+ticker,sector,sector_id
+AMD,Information Technology,7
+AIG,Financials,4
+AAPL,Information Technology,7
+AMAT,Information Technology,7
+T,Communication Services,0
+BAC,Financials,4
+BSX,Health Care,5
+SCHW,Financials,4
+CSCO,Information Technology,7
+C,Financials,4
+KO,Consumer Staples,2
+CMCSA,Communication Services,0
+GLW,Information Technology,7
+DAL,Industrials,6
+EBAY,Consumer Discretionary,1
+XOM,Energy,3
+F,Consumer Discretionary,1
+FCX,Materials,8
+GE,Industrials,6
+GM,Consumer Discretionary,1
+GILD,Health Care,5
+HAL,Energy,3
+HBAN,Financials,4
+INTC,Information Technology,7
+JPM,Financials,4
+KEY,Financials,4
+KMI,Energy,3
+KR,Consumer Staples,2
+MRK,Health Care,5
+MGM,Consumer Discretionary,1
+MU,Information Technology,7
+MSFT,Information Technology,7
+MDLZ,Consumer Staples,2
+MS,Financials,4
+NFLX,Communication Services,0
+NKE,Consumer Discretionary,1
+NVDA,Information Technology,7
+ORCL,Information Technology,7
+PFE,Health Care,5
+PG,Consumer Staples,2
+QCOM,Information Technology,7
+RF,Financials,4
+SBUX,Consumer Discretionary,1
+VZ,Communication Services,0
+V,Financials,4
+WFC,Financials,4
