@@ -38,9 +38,6 @@ Python, Streamlit, Scikit-learn, Pandas, Matplotlib, Seaborn
 Predicts whether an employee will leave the company based on HR analytics data.  
 Trained using Logistic Regression and deployed as an interactive Streamlit web app.
 
-**Live App:**  
-🔗 *(Add Streamlit link after deployment)*
-
 **Model Metrics:**  
 - Accuracy: 76%  
 - Recall (Leavers): 76%  
